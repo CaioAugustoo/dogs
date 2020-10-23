@@ -3,7 +3,7 @@ import useForm from "../../Hooks/useForm";
 import { Button } from "../Buttons/style";
 import Input from "../Inputs/Inputs";
 import Title from "../Title/Title";
-import { Forms, LoginFormStyled, LoginSection, Section } from "./style";
+import { LoginFormStyled, Section } from "./style";
 import { USER_POST } from "../../services/apiUrl";
 import { UserContext } from "../../UserContext";
 import useFetch from "../../Hooks/useFetch";
@@ -29,27 +29,18 @@ const LoginCreate = () => {
   };
 
   return (
-    <LoginSection>
-      <Forms>
-        <Section>
-          <Title sectionTitle="Cadastre-se" />
-          <LoginFormStyled onSubmit={handleSubmit}>
-            <Input label="Usuário" type="text" name="username" {...username} />
-            <Input label="Email" type="text" name="email" {...email} />
-            <Input
-              label="Senha"
-              type="password"
-              name="password"
-              {...password}
-            />
-            <Button disabled={loading ? true : false}>
-              {loading ? "Cadastrando..." : "Cadastrar"}
-            </Button>
-            {error && <Error errorMessage={error} />}
-          </LoginFormStyled>
-        </Section>
-      </Forms>
-    </LoginSection>
+    <Section>
+      <Title sectionTitle="Cadastre-se">Cadastre-se</Title>
+      <LoginFormStyled onSubmit={handleSubmit}>
+        <Input label="Usuário" type="text" name="username" {...username} />
+        <Input label="Email" type="text" name="email" {...email} />
+        <Input label="Senha" type="password" name="password" {...password} />
+        <Button disabled={loading ? true : false}>
+          {loading ? "Cadastrando..." : "Cadastrar"}
+        </Button>
+        {error && <Error errorMessage={error} />}
+      </LoginFormStyled>
+    </Section>
   );
 };
 
