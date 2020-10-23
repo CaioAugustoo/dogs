@@ -1,9 +1,12 @@
 import React from "react";
+import FeedModal from "./FeedModal";
+import FeedPhotos from "./FeedPhotos";
 
 const Feed = () => {
   return (
     <div>
-      <h1>Feed</h1>
+      {/* <FeedModal /> */}
+      <FeedPhotos />
     </div>
   );
 };
