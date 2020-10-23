@@ -38,8 +38,61 @@ export const Nav = styled.nav`
 
       svg > * {
         fill: #fb1;
+        transition: 0.3s;
       }
     }
+  }
+
+  &.menu__mobile__items {
+    display: block;
+    position: absolute;
+    top: 4.375rem;
+    right: 0rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    box-shadow: 0 0.0625rem 20px rgb(0 0 0 / 5%);
+    border-radius: 0.2rem;
+    transform: translateX(-0.625rem);
+    opacity: 0;
+    transition: 0.1s ease;
+    pointer-events: none;
+
+    a,
+    button,
+    a.active {
+      display: flex;
+      align-items: center;
+      background: none;
+      width: 100%;
+      border: 0;
+      border-bottom: 0.0625rem solid #eee;
+      padding: 0.5rem 0;
+      cursor: pointer;
+      justify-content: flex-start;
+      box-shadow: none;
+      border-radius: 0;
+
+      &:hover svg > * {
+        fill: #fb1;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      svg,
+      svg > * {
+        fill: #333;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &.mobile__items__active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 100;
+    pointer-events: initial;
   }
 `;
 
@@ -49,4 +102,46 @@ export const Header = styled.header`
   align-items: center;
   margin: 1rem 0;
   position: relative;
+`;
+
+export const MobileButton = styled.button`
+  background: #eee;
+  border-radius: 0.2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.0625rem solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+
+  .mobile__button__active,
+  &:focus,
+  &:hover {
+    outline: none;
+    background: white;
+    box-shadow: 0 0 0 0.1875rem #fea;
+    border-color: #fb1;
+    color: #fb1;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 0.125rem;
+    background: currentColor;
+    border-radius: 0.125rem;
+    box-shadow: 0 0.375rem currentColor, 0 -0.375rem currentColor;
+    transition: 0.2s;
+  }
+
+  &.mobile__button__active:after {
+    transform: rotate(-90deg);
+    width: 0.25rem;
+    height: 0.25rem;
+    box-shadow: 0 0.5rem currentColor, 0 -0.5rem currentColor;
+  }
 `;
