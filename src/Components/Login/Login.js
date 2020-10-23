@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
 import LoginForm from "./LoginForm";
-import LoginCreate from "./LoginForm";
-import LoginPasswordLost from "./LoginForm";
-import LoginPasswordReset from "./LoginForm";
+import LoginCreate from "./LoginCreate";
+import LoginPasswordLost from "./LoginPasswordLost";
+import LoginPasswordReset from "./LoginPasswordReset";
 import { Forms, LoginSection } from "./style";
 
 const Login = () => {
