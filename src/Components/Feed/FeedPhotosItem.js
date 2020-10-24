@@ -1,9 +1,13 @@
 import React from "react";
 import { Photo } from "./style";
 
-const FeedPhotosItem = ({ photo }) => {
+const FeedPhotosItem = ({ photo, setModalPhoto }) => {
+  const handleClick = () => {
+    setModalPhoto(photo);
+  };
+
   return (
-    <Photo>
+    <Photo onClick={handleClick}>
       <img src={photo.src} alt={photo.title} />
       <span>{photo.acessos}</span>
     </Photo>

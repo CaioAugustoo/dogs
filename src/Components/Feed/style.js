@@ -71,3 +71,19 @@ export const Photo = styled.li`
     }
   }
 `;
+
+export const Modal = styled.div`
+  position: fixed;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem calc(4rem + 0.9375rem) 2rem 4rem;
+
+  @media (max-width: 40rem) {
+    padding: 2rem calc(2rem + 0.9375rem) 2rem 2rem;
+  }
+`;
