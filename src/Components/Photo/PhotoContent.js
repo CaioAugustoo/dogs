@@ -5,6 +5,7 @@ import Title from "../Title/Title";
 import PhotoComments from "./PhotoComments";
 import { UserContext } from "../../UserContext";
 import PhotoDelete from "./PhotoDelete";
+import Image from "../Helper/Image/Image";
 
 const PhotoContent = ({ data }) => {
   const { photo, comments } = data;
@@ -13,7 +14,7 @@ const PhotoContent = ({ data }) => {
   return (
     <Photo>
       <PostImage>
-        <img src={photo.src} alt={photo.title} />
+        <Image src={photo.src} alt={photo.title} />
       </PostImage>
       <Details>
         <div>
