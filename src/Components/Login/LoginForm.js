@@ -52,7 +52,7 @@ const LoginForm = () => {
         <Buttons type="submit" disabled={loading ? true : false}>
           {loading ? "Carregando..." : "Entrar"}
         </Buttons>
-        {error && <Error errorMessage={error} />}
+        {error && <Error>{error}</Error>}
       </LoginFormStyled>
 
       <Link to="/login/perdeu" className="password__lost">
