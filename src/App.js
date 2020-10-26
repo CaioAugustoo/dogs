@@ -10,23 +10,29 @@ import GlobalStyle from "./style/GlobalStyle";
 import Photo from "./Components/Photo/Photo";
 import UserProfile from "./Components/User/UserProfile";
 import NotFound from "./Components/NotFound";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <UserStorage>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="login/*" element={<Login />} />
-          <Route path="foto/:id" element={<Photo />} />
-          <Route path="perfil/:user" element={<UserProfile />} />
-          <Route path="*" element={<NotFound />} />
-          <ProtectedRoute path="conta/*" element={<User />} />
-        </Routes>
-      </UserStorage>
-      <GlobalStyle />
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <UserStorage>
+          <Header />
+          <main className="App__body">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="login/*" element={<Login />} />
+              <Route path="foto/:id" element={<Photo />} />
+              <Route path="perfil/:user" element={<UserProfile />} />
+              <Route path="*" element={<NotFound />} />
+              <ProtectedRoute path="conta/*" element={<User />} />
+            </Routes>
+          </main>
+          <Footer />
+        </UserStorage>
+        <GlobalStyle />
+      </BrowserRouter>
+    </div>
   );
 };
 
