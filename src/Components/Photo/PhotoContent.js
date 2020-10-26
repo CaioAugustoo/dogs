@@ -7,12 +7,12 @@ import { UserContext } from "../../UserContext";
 import PhotoDelete from "./PhotoDelete";
 import Image from "../Helper/Image/Image";
 
-const PhotoContent = ({ data }) => {
+const PhotoContent = ({ data, single }) => {
   const { photo, comments } = data;
   const user = useContext(UserContext);
 
   return (
-    <Photo>
+    <Photo className={single && "photo__single"}>
       <PostImage>
         <Image src={photo.src} alt={photo.title} />
       </PostImage>
