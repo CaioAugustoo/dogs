@@ -145,3 +145,50 @@ export const MobileButton = styled.button`
     box-shadow: 0 0.5rem currentColor, 0 -0.5rem currentColor;
   }
 `;
+
+export const PhotoPost = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+
+  form #img {
+    margin-bottom: 1rem;
+  }
+`;
+
+export const Preview = styled.div`
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0rem;
+    padding-bottom: 100%;
+  }
+`;
+
+export const Total = styled.div`
+  grid-column: 1/3;
+  padding: 2rem;
+  font-size: 2rem;
+
+  &.graph__item {
+    box-shadow: rgb(0 0 0 / 5%) 0rem 0.625rem 1.25rem;
+    border-radius: 0.2rem;
+    display: grid;
+    align-items: center;
+  }
+
+  &.graph__total {
+    grid-column: 1/3;
+    padding: 2rem;
+    font-size: 2rem;
+
+    @media (max-width: 40rem) {
+      grid-column: 1;
+    }
+  }
+`;
