@@ -6,6 +6,7 @@ import Error from "../Helper/Error/Error";
 import Loading from "../Helper/Loading/Loading";
 import PhotoContent from "./PhotoContent";
 import { Container } from "../../style/GlobalStyle";
+import Head from "../Helper/Head/Head";
 
 const Photo = () => {
   const { id } = useParams();
@@ -22,6 +23,7 @@ const Photo = () => {
   if (data)
     return (
       <Container style={{ marginTop: "2rem" }}>
+        <Head title={data.photo.title} />
         <PhotoContent single={true} data={data} />
       </Container>
     );
