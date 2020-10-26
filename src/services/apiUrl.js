@@ -119,7 +119,7 @@ export const PASSWORD_LOST = body => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringfy(body),
+      body: JSON.stringify(body),
     },
   };
 };
