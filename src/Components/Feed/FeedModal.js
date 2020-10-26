@@ -20,7 +20,7 @@ const FeedModal = ({ photo, setModalPhoto }) => {
 
   return (
     <Modal onClick={handleOutsideClick}>
-      {error && <Error errorMessage={error} />}
+      {error && <Error>{error}</Error>}
       {loading && <Loading />}
       {data && <PhotoContent data={data} />}
     </Modal>
