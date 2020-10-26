@@ -38,7 +38,7 @@ const LoginCreate = () => {
         <Button disabled={loading ? true : false}>
           {loading ? "Cadastrando..." : "Cadastrar"}
         </Button>
-        {error && <Error errorMessage={error} />}
+        {error && <Error>{error}</Error>}
       </LoginFormStyled>
     </Section>
   );
