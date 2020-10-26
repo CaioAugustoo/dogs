@@ -40,6 +40,16 @@ export default createGlobalStyle`
     text-decoration: none;
     color: #333;
   }
+
+  .App {
+     display: flex;
+     flex-direction: column;
+     min-height: calc(100vh + 10rem);
+   }
+
+   .App__body {
+     flex: 1;
+   }
 `;
 
 export const Container = styled.div`
