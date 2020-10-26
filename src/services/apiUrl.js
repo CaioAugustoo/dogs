@@ -116,10 +116,10 @@ export const PASSWORD_LOST = body => {
     url: API_URL + "/api/password/lost",
     options: {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringfy(body),
     },
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringfy(body),
   };
 };
