@@ -30,6 +30,29 @@ export const Photo = styled.div`
   height: 36rem;
   border-radius: 0.2rem;
 
+  &.photo__single {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  &.photo__single div img {
+    grid-row: 1;
+    border-radius: 0.4rem;
+    overflow: hidden;
+  }
+
+  &.photo__single div:nth-child(2) {
+    padding: 1rem 0 0 0;
+  }
+
+  &.photo__single ul {
+    padding: 0;
+  }
+
+  &.photo__single form {
+    margin: 1rem 0;
+  }
+
   @media (max-width: 64rem) {
     height: auto;
     max-height: calc(100vh - 4rem);
