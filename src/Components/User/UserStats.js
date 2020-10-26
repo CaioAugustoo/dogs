@@ -1,11 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import Head from "../Helper/Head/Head";
 import useFetch from "../../Hooks/useFetch";
 import { useEffect } from "react";
 import Loading from "../Helper/Loading/Loading";
 import { Error } from "../Inputs/style";
 import { GET_STATS } from "../../services/apiUrl";
-import UserStatsGraphs from "./UserStatsGraphs";
+import { Suspense } from "react";
+const UserStatsGraphs = lazy(() => import("./UserStatsGraphs"));
 
 const UserStats = () => {
   const { data, error, loading, request } = useFetch();
@@ -23,10 +24,10 @@ const UserStats = () => {
   if (error) return <Error>{error}</Error>;
   if (data)
     return (
-      <div>
+      <Suspense fallback={<div></div>}>
         <Head title="Estatísticas" />
         <UserStatsGraphs data={data} />
-      </div>
+      </Suspense>
     );
   else return null;
 };
