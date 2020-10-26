@@ -7,6 +7,7 @@ import User from "./Components/User/User";
 import Header from "./Components/Header/Header";
 import { UserStorage } from "./UserContext";
 import GlobalStyle from "./style/GlobalStyle";
+import Photo from "./Components/Photo/Photo";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="login/*" element={<Login />} />
+          <Route path="foto/:id" element={<Photo />} />
           <ProtectedRoute path="conta/*" element={<User />} />
         </Routes>
       </UserStorage>
