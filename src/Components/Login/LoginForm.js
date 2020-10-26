@@ -8,6 +8,7 @@ import { TOKEN_POST } from "../../services/apiUrl";
 import { Section, LoginFormStyled, Register } from "./style";
 import Title from "../Title/Title";
 import { Error } from "../Inputs/style";
+import Head from "../Helper/Head/Head";
 
 const LoginForm = () => {
   const username = useForm();
@@ -33,6 +34,7 @@ const LoginForm = () => {
 
   return (
     <Section>
+      <Head title="Login" />
       <Title sectionTitle="Login">Login</Title>
       <LoginFormStyled onSubmit={handleSubmit}>
         <Input
