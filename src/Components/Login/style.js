@@ -15,6 +15,17 @@ export const Section = styled.section`
     }
   }
 
+   &.graph {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 2rem;
+
+     @media (max-width: 40rem) {
+       grid-template-columns: 1fr;
+       margin-bottom: 2rem;
+      }
+    }
+
   .password__lost {
     display: inline-block;
     color: #666;
