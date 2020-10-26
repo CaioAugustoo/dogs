@@ -50,6 +50,10 @@ export default createGlobalStyle`
    .App__body {
      flex: 1;
    }
+
+   .VictoryContainer {
+     height: initial !important;
+   }
 `;
 
 export const Container = styled.div`
