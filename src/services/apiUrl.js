@@ -123,3 +123,16 @@ export const PASSWORD_LOST = body => {
     },
   };
 };
+
+export const PASSWORD_REST = body => {
+  return {
+    url: API_URL + "/api/password/reset",
+    options: {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(body),
+    },
+  };
+};
