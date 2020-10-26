@@ -7,12 +7,14 @@ import UserStats from "./UserStats";
 import { Wrapper } from "./style";
 import { UserContext } from "../../UserContext";
 import NotFound from "../NotFound";
+import Head from "../Helper/Head/Head";
 
 const User = () => {
   const { data } = useContext(UserContext);
 
   return (
     <Wrapper>
+      <Head title="Minha Conta" />
       <UserHeader />
       <Routes>
         <Route path="/" element={<Feed user={data.id} />} />
