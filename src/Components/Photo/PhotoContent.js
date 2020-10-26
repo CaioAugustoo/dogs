@@ -26,9 +26,9 @@ const PhotoContent = ({ data, single }) => {
             )}
             <Views>{photo.acessos}</Views>
           </Author>
-          <Title sectionTitle={photo.title}>
-            <Link to={`/foto/${photo.id}`}>{photo.title}</Link>
-          </Title>
+          <Link to={`/foto/${photo.id}`}>
+            <Title sectionTitle={photo.title}>{photo.title}</Title>
+          </Link>
           <Attributes>
             <li>{photo.peso} kg</li>
             <li>
