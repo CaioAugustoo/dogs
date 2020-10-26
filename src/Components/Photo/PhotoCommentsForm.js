@@ -29,7 +29,7 @@ const PhotoCommentsForm = ({ id, setComments }) => {
       <Button>
         <Enviar />
       </Button>
-      <Error erroMessage={error} />
+      <Error>{error}</Error>
     </Form>
   );
 };
