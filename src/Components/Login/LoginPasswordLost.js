@@ -35,7 +35,7 @@ const LoginPasswordLost = () => {
           </Button>
         </form>
       )}
-      <Error errorMessage={error} />
+      <Error>{error}</Error>
     </>
   );
 };
