@@ -124,7 +124,7 @@ export const PASSWORD_LOST = body => {
   };
 };
 
-export const PASSWORD_REST = body => {
+export const PASSWORD_RESET = body => {
   return {
     url: API_URL + "/api/password/reset",
     options: {
