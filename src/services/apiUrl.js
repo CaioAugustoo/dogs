@@ -89,11 +89,37 @@ export const COMMENT_POST = (id, body) => {
     options: {
       method: "POST",
       cache: "no-store",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"), // apenas um exemplo
+      },
+      body: JSON.stringify(body),
+    },
+  };
+};
+
+export const PHOTO_DELETE = id => {
+  return {
+    url: `${API_URL}/api/photo/${id}`,
+    options: {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"), // apenas um exemplo
+      },
+    },
+  };
+};
+
+export const PASSWORD_LOST = body => {
+  return {
+    url: API_URL + "/api/password/lost",
+    options: {
+      method: "POST",
     },
     headers: {
       "Content-Type": "application/json",
-      Authorization: "Bearer " + localStorage.getItem("token"), // apenas um exemplo
     },
-    body: JSON.stringify(body),
+    body: JSON.stringfy(body),
   };
 };
