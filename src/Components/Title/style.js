@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TitleStyled = styled.h1`
   font-family: var(--type-second);
@@ -9,7 +9,7 @@ export const TitleStyled = styled.h1`
   z-index: 1;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 1.5rem;
     height: 1.5rem;
@@ -17,7 +17,7 @@ export const TitleStyled = styled.h1`
     position: absolute;
     bottom: 0.3125rem;
     left: -0.3125rem;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     z-index: -1;
   }
 `;
