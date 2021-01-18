@@ -1,14 +1,14 @@
 import React from "react";
-import { Wrapper } from "./style";
 import Feed from "../Feed/Feed";
 import Head from "../Helper/Head/Head";
+import { Container } from "../../style/GlobalStyle";
 
 const Home = () => {
   return (
-    <Wrapper>
+    <Container style={{ marginTop: "2rem" }}>
       <Head title="Fotos" description="Home do site Dogs, com feed de fotos" />
       <Feed />
-    </Wrapper>
+    </Container>
   );
 };
 

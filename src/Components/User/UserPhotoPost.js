@@ -8,6 +8,7 @@ import { PhotoPost, Preview } from "./style";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Head from "../Helper/Head/Head";
+import Error from "../Helper/Error/Error";
 
 const UserPhotoPost = () => {
   const nome = useForm();
@@ -51,6 +52,7 @@ const UserPhotoPost = () => {
         <Button disabled={loading ? true : false}>
           {loading ? "Enviando..." : "Enviar"}
         </Button>
+        <Error error={error} />
       </form>
       <div>
         {img.preview && (
