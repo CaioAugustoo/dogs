@@ -12,8 +12,7 @@ Você pode conferir o resultado final em: https://dogsreact.netlify.app
 
 
 ## 🎯 Objetivo do projeto
-Este projeto foi desenvolvido durante o curso de React da Origamid. O Projeto no curso é desenvolvido com CSS e em uma cor amarela. Eu me desafiei em desenvolver com styled components e alterei a cor para um azul.
-
+Este projeto foi desenvolvido durante o curso de React da Origamid. O Projeto no curso é desenvolvido com CSS modules. Eu me desafiei em desenvolver com styled components.
 ## 📝 Tecnologias 
 Para a realização desse projeto foram utilizadas as seguintes tecnologias/linguagens: 
 - [React](https://pt-br.reactjs.org) 
