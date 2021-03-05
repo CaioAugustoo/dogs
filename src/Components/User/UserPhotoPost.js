@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import * as S from "./style";
+
 import Input from "../../Components/Inputs/Inputs";
 import Button from "../Buttons/Buttons";
-import useForm from "../../Hooks/useForm";
-import { PHOTO_POST } from "../../services/apiUrl";
-import useFetch from "../../Hooks/useFetch";
-import { PhotoPost, Preview } from "./style";
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 import Head from "../Helper/Head/Head";
 import Error from "../Helper/Error/Error";
+
+import { PHOTO_POST } from "../../services/apiUrl";
+import useFetch from "../../Hooks/useFetch";
+import useForm from "../../Hooks/useForm";
 
 const UserPhotoPost = () => {
   const nome = useForm();
@@ -42,7 +43,7 @@ const UserPhotoPost = () => {
   };
 
   return (
-    <PhotoPost>
+    <S.PhotoPost>
       <Head title="Poste sua foto" />
       <form onSubmit={handleSubmit}>
         <Input label="Nome" type="text" name="nome" {...nome} />
@@ -56,10 +57,10 @@ const UserPhotoPost = () => {
       </form>
       <div>
         {img.preview && (
-          <Preview style={{ backgroundImage: `url(${img.preview})` }}></Preview>
+          <S.Preview style={{ backgroundImage: `url(${img.preview})` }} />
         )}
       </div>
-    </PhotoPost>
+    </S.PhotoPost>
   );
 };
 

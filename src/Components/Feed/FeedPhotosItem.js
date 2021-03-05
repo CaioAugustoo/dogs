@@ -1,17 +1,17 @@
 import React from "react";
+
+import * as S from "./style";
+
 import Image from "../Helper/Image/Image";
-import { Photo } from "./style";
 
 const FeedPhotosItem = ({ photo, setModalPhoto }) => {
-  const handleClick = () => {
-    setModalPhoto(photo);
-  };
+  const handleClick = () => setModalPhoto(photo);
 
   return (
-    <Photo onClick={handleClick}>
+    <S.Photo onClick={handleClick}>
       <Image src={photo.src} alt={photo.title} />
       <span>{photo.acessos}</span>
-    </Photo>
+    </S.Photo>
   );
 };
 

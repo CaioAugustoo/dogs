@@ -1,11 +1,12 @@
 import React from "react";
-import { Button } from "./style";
+
+import * as S from "./style";
 
 const Buttons = ({ children, disabled, ...props }) => {
   return (
-    <Button {...props} disabled={disabled}>
+    <S.Button {...props} disabled={disabled}>
       {children}
-    </Button>
+    </S.Button>
   );
 };
 

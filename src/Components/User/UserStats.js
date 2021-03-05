@@ -1,11 +1,12 @@
-import React, { lazy } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
+
 import Head from "../Helper/Head/Head";
-import useFetch from "../../Hooks/useFetch";
-import { useEffect } from "react";
 import Loading from "../Helper/Loading/Loading";
 import { Error } from "../Inputs/style";
+
+import useFetch from "../../Hooks/useFetch";
 import { GET_STATS } from "../../services/apiUrl";
-import { Suspense } from "react";
+
 const UserStatsGraphs = lazy(() => import("./UserStatsGraphs"));
 
 const UserStats = () => {

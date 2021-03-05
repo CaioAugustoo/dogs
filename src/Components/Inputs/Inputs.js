@@ -1,11 +1,12 @@
 import React from "react";
-import { InputStyled, Wrapper, Label, Error } from "./style";
+
+import * as S from "./style";
 
 const Input = ({ type, onChange, label, name, value, error, onBlur }) => {
   return (
-    <Wrapper>
-      <Label htmlFor={name}>{label}</Label>
-      <InputStyled
+    <S.Wrapper>
+      <S.Label htmlFor={name}>{label}</S.Label>
+      <S.InputStyled
         type={type}
         id={name}
         name={name}
@@ -13,8 +14,8 @@ const Input = ({ type, onChange, label, name, value, error, onBlur }) => {
         value={value}
         onBlur={onBlur}
       />
-      {error && <Error>{error}</Error>}
-    </Wrapper>
+      {error && <S.Error>{error}</S.Error>}
+    </S.Wrapper>
   );
 };
 

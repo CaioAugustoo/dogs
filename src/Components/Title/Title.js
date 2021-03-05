@@ -1,8 +1,8 @@
 import React from "react";
-import { TitleStyled } from "./style";
+import * as S from "./style";
 
 const Title = ({ sectionTitle }) => {
-  return <TitleStyled>{sectionTitle}</TitleStyled>;
+  return <S.TitleStyled>{sectionTitle}</S.TitleStyled>;
 };
 
 export default Title;

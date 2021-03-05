@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import * as S from "./style";
 import { ReactComponent as Enviar } from "../../Assets/enviar.svg";
+
 import useFetch from "../../Hooks/useFetch";
+
 import { COMMENT_POST } from "../../services/apiUrl";
+
 import Error from "../Helper/Error/Error";
-import { Form, TextArea, Button } from "./style";
 
 const PhotoCommentsForm = ({ id, setComments }) => {
   const { request, error } = useFetch();
@@ -18,19 +21,19 @@ const PhotoCommentsForm = ({ id, setComments }) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <TextArea
+    <S.Form onSubmit={handleSubmit}>
+      <S.TextArea
         id="comment"
         name="comment"
         placeholder="Comente..."
         value={comment}
         onChange={({ target }) => setComment(target.value)}
-      ></TextArea>
-      <Button>
+      ></S.TextArea>
+      <S.Button>
         <Enviar />
-      </Button>
+      </S.Button>
       <Error>{error}</Error>
-    </Form>
+    </S.Form>
   );
 };
 

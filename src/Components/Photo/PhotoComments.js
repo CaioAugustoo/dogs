@@ -1,8 +1,8 @@
-import React, { useContext, useState, useRef } from "react";
-import { useEffect } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
+import * as S from "./style";
+
 import { UserContext } from "../../UserContext";
 import PhotoCommentsForm from "./PhotoCommentsForm";
-import { Comment } from "./style";
 
 const PhotoComments = props => {
   const [comments, setComments] = useState(() => props.comments);
@@ -15,14 +15,14 @@ const PhotoComments = props => {
 
   return (
     <>
-      <Comment ref={commentSection}>
+      <S.Comment ref={commentSection}>
         {comments.map(comment => (
           <li key={comment.comment_ID}>
             <b>{comment.comment_author}: </b>
             <span>{comment.comment_content}</span>
           </li>
         ))}
-      </Comment>
+      </S.Comment>
       {login && <PhotoCommentsForm id={props.id} setComments={setComments} />}
     </>
   );

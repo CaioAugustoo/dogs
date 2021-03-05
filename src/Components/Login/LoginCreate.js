@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
-import useForm from "../../Hooks/useForm";
-import { Button } from "../Buttons/style";
-import Input from "../Inputs/Inputs";
-import Title from "../Title/Title";
-import { LoginFormStyled, Section } from "./style";
+import * as S from "./style";
+
 import { USER_POST } from "../../services/apiUrl";
 import { UserContext } from "../../UserContext";
+
+import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
+
 import { Error } from "../Inputs/style";
+import Button from "../Buttons/Buttons";
+import Input from "../Inputs/Inputs";
+import Title from "../Title/Title";
 import Head from "../Helper/Head/Head";
 
 const LoginCreate = () => {
@@ -30,10 +33,10 @@ const LoginCreate = () => {
   };
 
   return (
-    <Section>
+    <S.Section>
       <Head title="Crie sua conta" />
       <Title sectionTitle="Cadastre-se">Cadastre-se</Title>
-      <LoginFormStyled onSubmit={handleSubmit}>
+      <S.LoginFormStyled onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
         <Input label="Email" type="text" name="email" {...email} />
         <Input label="Senha" type="password" name="password" {...password} />
@@ -41,8 +44,8 @@ const LoginCreate = () => {
           {loading ? "Cadastrando..." : "Cadastrar"}
         </Button>
         {error && <Error>{error}</Error>}
-      </LoginFormStyled>
-    </Section>
+      </S.LoginFormStyled>
+    </S.Section>
   );
 };
 

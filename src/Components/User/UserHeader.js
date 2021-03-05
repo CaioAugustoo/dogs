@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import * as S from "./style";
+
 import Title from "../Title/Title";
 import UserHeaderNav from "./UserHeaderNav";
-import { Header } from "./style";
 
 const UserHeader = () => {
   const [title, setTitle] = useState("");
@@ -10,6 +11,7 @@ const UserHeader = () => {
 
   useEffect(() => {
     const { pathname } = location;
+
     switch (pathname) {
       case "/conta/postar":
         setTitle("Poste sua foto");
@@ -23,10 +25,10 @@ const UserHeader = () => {
   }, [location]);
 
   return (
-    <Header>
+    <S.Header>
       <Title sectionTitle={title} />
       <UserHeaderNav />
-    </Header>
+    </S.Header>
   );
 };
 

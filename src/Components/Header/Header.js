@@ -1,18 +1,21 @@
 import React, { useContext } from "react";
+
 import { Link } from "react-router-dom";
-import { HeaderStyled, HeaderNavigation } from "./style";
+
+import * as S from "./style";
+import { Container } from "../../style/GlobalStyle";
+
 import { ReactComponent as Dogs } from "../../Assets/dogs.svg";
 
-import { Container } from "../../style/GlobalStyle";
 import { UserContext } from "../../UserContext";
 
 const Header = () => {
   const { data } = useContext(UserContext);
 
   return (
-    <HeaderStyled>
+    <S.HeaderStyled>
       <Container>
-        <HeaderNavigation>
+        <S.HeaderNavigation>
           <Link to="/">
             {" "}
             <Dogs />{" "}
@@ -22,9 +25,9 @@ const Header = () => {
           ) : (
             <Link to="/login">Login / Criar</Link>
           )}
-        </HeaderNavigation>
+        </S.HeaderNavigation>
       </Container>
-    </HeaderStyled>
+    </S.HeaderStyled>
   );
 };
 

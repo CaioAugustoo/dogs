@@ -1,6 +1,8 @@
 import React from "react";
-import { Container } from "../style/GlobalStyle";
+
 import Title from "./Title/Title";
+
+import { Container } from "../style/GlobalStyle";
 
 const NotFound = () => {
   return (

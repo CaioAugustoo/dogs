@@ -1,9 +1,11 @@
 import React from "react";
-import Feed from "../Feed/Feed";
-import { Container } from "../../style/GlobalStyle";
 import { useParams } from "react-router-dom";
+
+import Feed from "../Feed/Feed";
 import Title from "../Title/Title";
 import Head from "../Helper/Head/Head";
+
+import { Container } from "../../style/GlobalStyle";
 
 const UserProfile = () => {
   const { user } = useParams();

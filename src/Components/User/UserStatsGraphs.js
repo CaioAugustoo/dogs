@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import * as S from "./style";
+
 import { Section } from "../Login/style";
-import { Total } from "./style";
+
 import { VictoryPie, VictoryChart, VictoryBar } from "victory";
 
 const UserStatsGraphs = ({ data }) => {
@@ -23,9 +24,9 @@ const UserStatsGraphs = ({ data }) => {
 
   return (
     <Section className="graph">
-      <Total className="graph__item graph__total">
+      <S.Total className="graph__item graph__total">
         <p>Acessos: {total}</p>
-      </Total>
+      </S.Total>
       <div
         style={{
           boxShadow: "rgb(0 0 0 / 5%) 0rem 0.625rem 1.25rem",

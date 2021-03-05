@@ -1,9 +1,10 @@
 import React from "react";
-import { ErrorStyled } from "./style";
+
+import * as S from "./style";
 
 const Error = ({ erroMessage }) => {
   if (!erroMessage) return null;
-  return <ErrorStyled>{erroMessage}</ErrorStyled>;
+  return <S.ErrorStyled>{erroMessage}</S.ErrorStyled>;
 };
 
 export default Error;

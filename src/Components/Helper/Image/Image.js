@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Wrapper, Skeleton } from "./style";
+
+import * as S from "./style";
 
 const Image = ({ alt, ...props }) => {
   const [skeleton, setSkeleton] = useState(true);
@@ -10,10 +11,10 @@ const Image = ({ alt, ...props }) => {
   };
 
   return (
-    <Wrapper>
-      {skeleton && <Skeleton></Skeleton>}
+    <S.Wrapper>
+      {skeleton && <S.Skeleton></S.Skeleton>}
       <img onLoad={handleLoad} alt="" {...props} />
-    </Wrapper>
+    </S.Wrapper>
   );
 };
 

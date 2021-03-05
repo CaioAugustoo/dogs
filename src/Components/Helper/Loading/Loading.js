@@ -1,10 +1,11 @@
-import React from "react";
-import { Wrapper, Loader } from "./style";
+import React, { useState, useEffect } from "react";
+
+import * as S from "./style";
 
 const Loading = () => {
-  const [step, setStep] = React.useState(0);
+  const [step, setStep] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const updateStep = () => {
       setStep(step => {
         if (step < 3) return step + 1;
@@ -24,8 +25,8 @@ const Loading = () => {
   };
 
   return (
-    <Wrapper>
-      <Loader>
+    <S.Wrapper>
+      <S.Loader>
         <svg
           width="46"
           height="31"
@@ -102,8 +103,8 @@ const Loading = () => {
             />
           </g>
         </svg>
-      </Loader>
-    </Wrapper>
+      </S.Loader>
+    </S.Wrapper>
   );
 };
 

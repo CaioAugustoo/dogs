@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+
 import FeedModal from "./FeedModal";
 import FeedPhotos from "./FeedPhotos";
-import PropTypes from "prop-types";
 
 const Feed = ({ user }) => {
   const [modalPhoto, setModalPhoto] = useState(null);
-  const [pages, setPages] = useState([1]); // valor padrão de quantas pags o feed deve carregar
+  const [pages, setPages] = useState([1]);
   const [infinite, setInfinite] = useState(true);
 
   useEffect(() => {

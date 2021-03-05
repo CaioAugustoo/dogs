@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
+import * as S from "./style";
+
 import { Link } from "react-router-dom";
-import Input from "../Inputs/Inputs";
-import Buttons from "../Buttons/Buttons";
-import useForm from "../../Hooks/useForm";
+
 import { UserContext } from "../../UserContext";
 import { TOKEN_POST } from "../../services/apiUrl";
-import { Section, LoginFormStyled, Register } from "./style";
+
+import Input from "../Inputs/Inputs";
+import Buttons from "../Buttons/Buttons";
 import Title from "../Title/Title";
 import { Error } from "../Inputs/style";
 import Head from "../Helper/Head/Head";
+
+import useForm from "../../Hooks/useForm";
 
 const LoginForm = () => {
   const username = useForm();
@@ -33,10 +37,10 @@ const LoginForm = () => {
   };
 
   return (
-    <Section>
+    <S.Section>
       <Head title="Login" />
       <Title sectionTitle="Login">Login</Title>
-      <LoginFormStyled onSubmit={handleSubmit}>
+      <S.LoginFormStyled onSubmit={handleSubmit}>
         <Input
           label="Usuário"
           name="username"
@@ -55,21 +59,21 @@ const LoginForm = () => {
           {loading ? "Carregando..." : "Entrar"}
         </Buttons>
         {error && <Error>{error}</Error>}
-      </LoginFormStyled>
+      </S.LoginFormStyled>
 
       <Link to="/login/perdeu" className="password__lost">
         Perdeu a Senha?
       </Link>
 
-      <Register>
+      <S.Register>
         <h2>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
 
         <Link to="/login/criar" className="login__register">
           <Buttons type="submit">Cadastro</Buttons>
         </Link>
-      </Register>
-    </Section>
+      </S.Register>
+    </S.Section>
   );
 };
 

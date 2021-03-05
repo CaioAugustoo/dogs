@@ -1,13 +1,16 @@
 import React from "react";
+import * as S from "./style";
+
+import { PASSWORD_LOST } from "../../services/apiUrl";
+
 import Title from "../Title/Title";
 import Input from "../Inputs/Inputs";
 import Button from "../Buttons/Buttons";
+import { Error } from "../Inputs/style";
+import Head from "../Helper/Head/Head";
+
 import useForm from "../../Hooks/useForm";
 import useFetch from "../../Hooks/useFetch";
-import { PASSWORD_LOST } from "../../services/apiUrl";
-import { Error } from "../Inputs/style";
-import { Section } from "./style";
-import Head from "../Helper/Head/Head";
 
 const LoginPasswordLost = () => {
   const login = useForm();
@@ -25,8 +28,8 @@ const LoginPasswordLost = () => {
   };
 
   return (
-    <Section>
-    <Head title="Perdeu a senha" />
+    <S.Section>
+      <Head title="Perdeu a senha" />
       <Title sectionTitle="Perdeu a senha?" />
       {data ? (
         <p style={{ color: "#4C1" }}>{data}</p>
@@ -39,7 +42,7 @@ const LoginPasswordLost = () => {
         </form>
       )}
       <Error>{error}</Error>
-    </Section>
+    </S.Section>
   );
 };
 

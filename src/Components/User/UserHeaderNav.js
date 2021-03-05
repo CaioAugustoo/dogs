@@ -1,14 +1,14 @@
 import React, { useEffect, useContext, useState } from "react";
-import { MobileButton } from "./style";
 import { NavLink, useLocation } from "react-router-dom";
+import * as S from "./style";
+
 import { ReactComponent as MinhasFotos } from "../../Assets/feed.svg";
 import { ReactComponent as Estatísticas } from "../../Assets/estatisticas.svg";
 import { ReactComponent as AdicionarFoto } from "../../Assets/adicionar.svg";
 import { ReactComponent as Sair } from "../../Assets/sair.svg";
-import { Nav } from "./style";
 
-import { UserContext } from "../../UserContext";
 import useMedia from "../../Hooks/useMedia";
+import { UserContext } from "../../UserContext";
 
 const UserHeaderNav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -24,14 +24,14 @@ const UserHeaderNav = () => {
   return (
     <>
       {mobile && (
-        <MobileButton
+        <S.MobileButton
           aria-label="menu"
           className={mobileMenu && "mobile__button__active"}
           onClick={() => setMobileMenu(!mobileMenu)}
-        ></MobileButton>
+        />
       )}
 
-      <Nav
+      <S.Nav
         className={`${mobile ? "menu__mobile__items" : ""} ${
           mobileMenu ? "mobile__items__active" : ""
         }`}
@@ -52,7 +52,7 @@ const UserHeaderNav = () => {
           <Sair />
           {mobile && "Sair"}
         </button>
-      </Nav>
+      </S.Nav>
     </>
   );
 };

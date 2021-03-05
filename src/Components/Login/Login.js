@@ -1,20 +1,22 @@
 import React, { useContext } from "react";
+import * as S from "./style";
+
 import { Routes, Route, Navigate } from "react-router-dom";
 import { UserContext } from "../../UserContext";
+
 import LoginForm from "./LoginForm";
 import LoginCreate from "./LoginCreate";
 import LoginPasswordLost from "./LoginPasswordLost";
 import LoginPasswordReset from "./LoginPasswordReset";
-import { Forms, LoginSection } from "./style";
 import NotFound from "../NotFound";
 
 const Login = () => {
   const { login } = useContext(UserContext);
 
-  if (login === true) return <Navigate to="/conta" />;
+  if (login) return <Navigate to="/conta" />;
   return (
-    <LoginSection>
-      <Forms>
+    <S.LoginSection>
+      <S.Forms>
         <Routes>
           <Route path="/" element={<LoginForm />} />
           <Route path="criar" element={<LoginCreate />} />
@@ -22,8 +24,8 @@ const Login = () => {
           <Route path="resetar" element={<LoginPasswordReset />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Forms>
-    </LoginSection>
+      </S.Forms>
+    </S.LoginSection>
   );
 };
 
