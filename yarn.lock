@@ -10719,17 +10719,17 @@ victory-core@^35.4.11:
     prop-types "^15.5.8"
     react-fast-compare "^2.0.0"
 
-victory-create-container@^35.4.12:
-  version "35.4.12"
-  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-35.4.12.tgz#4b83d89cb6ce6c27bddba649b1e89ba75e87a4cf"
-  integrity sha512-WRjwuEJpwblHQtR1f0lpfh3tTmF+eDDCFdb02vvnfBoXECr7Wa/Y8pbeZIev//1uWrv7NkEDUUd1jJ2nn51RTA==
+victory-create-container@^35.4.13:
+  version "35.4.13"
+  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-35.4.13.tgz#de06baff9480fd41d6500a191f472c1d9b783a48"
+  integrity sha512-3rnjoNr0XY0m45D4ITrWZMzFb4LVRnrUJKdxgmF963XTuncK+QFPfcHhfnrrFIoDwY/PnUAgGYEFPUka84xwbw==
   dependencies:
     lodash "^4.17.19"
     victory-brush-container "^35.4.12"
     victory-core "^35.4.11"
     victory-cursor-container "^35.4.11"
     victory-selection-container "^35.4.11"
-    victory-voronoi-container "^35.4.11"
+    victory-voronoi-container "^35.4.13"
     victory-zoom-container "^35.4.11"
 
 victory-cursor-container@^35.4.11:
@@ -10852,26 +10852,26 @@ victory-stack@^35.4.11:
     victory-core "^35.4.11"
     victory-shared-events "^35.4.11"
 
-victory-tooltip@^35.4.11:
-  version "35.4.11"
-  resolved "https://registry.yarnpkg.com/victory-tooltip/-/victory-tooltip-35.4.11.tgz#c4291b0517010f09bac7bda89d482ad690cf8f63"
-  integrity sha512-nyhENyuy5/7Swl3H/q9T9g04TniPyE6vNvN+xkJw+KIHL8FivajjY7xtZhcUoid6ZUKWjcaYI1wu/TUpX9uMCg==
+victory-tooltip@^35.4.13:
+  version "35.4.13"
+  resolved "https://registry.yarnpkg.com/victory-tooltip/-/victory-tooltip-35.4.13.tgz#7d42b66f3a0c2d1406e290e04968552085dc96be"
+  integrity sha512-+CUTkVjvEQl6iBmOOA/2lsZNRvI9vocw5NHfQwVNnlAQAxe/B/PbggvaalsIanlvqHTGk0dqhF/efUU9ojRMIQ==
   dependencies:
     lodash "^4.17.19"
     prop-types "^15.5.8"
     victory-core "^35.4.11"
 
-victory-voronoi-container@^35.4.11:
-  version "35.4.11"
-  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-35.4.11.tgz#d7c03f997de8e0129fbab38dbdb1dbca83647217"
-  integrity sha512-3KL5pN46+S0N1GSnNaTILgSXrmW/8Y6WryWhxlv/dgcDGd9j9V5gNF1OVBjqPeCYyu1jlszXB+PxMcE1CaCYEQ==
+victory-voronoi-container@^35.4.13:
+  version "35.4.13"
+  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-35.4.13.tgz#8cb211d5c17387f210ec90d1706a5a48bd01e325"
+  integrity sha512-Z2wr2xGP8XVRV84K0Q7pLBjyw4zjv4H6czF40I3k/uE6fgg0m2zt2ifKcgEkHL8/TBrITFbGz4W0qLDz6/tvig==
   dependencies:
     delaunay-find "0.0.5"
     lodash "^4.17.19"
     prop-types "^15.5.8"
     react-fast-compare "^2.0.0"
     victory-core "^35.4.11"
-    victory-tooltip "^35.4.11"
+    victory-tooltip "^35.4.13"
 
 victory-voronoi@^35.4.11:
   version "35.4.11"
@@ -10892,10 +10892,10 @@ victory-zoom-container@^35.4.11:
     prop-types "^15.5.8"
     victory-core "^35.4.11"
 
-victory@^35.4.12:
-  version "35.4.12"
-  resolved "https://registry.yarnpkg.com/victory/-/victory-35.4.12.tgz#2130d3dc1e8bd083b658e6cefe48c6555601e194"
-  integrity sha512-b3uaishHftXHClb78DNfYdwcFXsD1LlXMkKCxBNYBFjareStsBtDmLBGEhBqn7VbVdq+mTR0jV7UQiUC45GrKg==
+victory@^35.4.13:
+  version "35.4.13"
+  resolved "https://registry.yarnpkg.com/victory/-/victory-35.4.13.tgz#b8d60c3e698f57e24e89ab9d840350486d9eb884"
+  integrity sha512-aFUV5WbF75dYBs9ChrHtUKoL/c42pnD1OY5x3qSmEg1VexQskRHUHpgpuzhKrPhSniv/qWVr/JhujzhOqnHDhA==
   dependencies:
     victory-area "^35.4.11"
     victory-axis "^35.4.11"
@@ -10906,7 +10906,7 @@ victory@^35.4.12:
     victory-candlestick "^35.4.11"
     victory-chart "^35.4.11"
     victory-core "^35.4.11"
-    victory-create-container "^35.4.12"
+    victory-create-container "^35.4.13"
     victory-cursor-container "^35.4.11"
     victory-errorbar "^35.4.11"
     victory-group "^35.4.11"
@@ -10919,9 +10919,9 @@ victory@^35.4.12:
     victory-selection-container "^35.4.11"
     victory-shared-events "^35.4.11"
     victory-stack "^35.4.11"
-    victory-tooltip "^35.4.11"
+    victory-tooltip "^35.4.13"
     victory-voronoi "^35.4.11"
-    victory-voronoi-container "^35.4.11"
+    victory-voronoi-container "^35.4.13"
     victory-zoom-container "^35.4.11"
 
 vm-browserify@^1.0.1:
