@@ -3740,10 +3740,10 @@ delaunator@^4.0.0:
   resolved "https://registry.yarnpkg.com/delaunator/-/delaunator-4.0.1.tgz#3d779687f57919a7a418f8ab947d3bddb6846957"
   integrity sha512-WNPWi1IRKZfCt/qIDMfERkDp93+iZEmOxN2yy4Jg+Xhv8SLk2UTqqbe1sfiipn0and9QrE914/ihdx82Y/Giag==
 
-delaunay-find@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/delaunay-find/-/delaunay-find-0.0.5.tgz#5fb37e6509da934881b4b16c08898ac89862c097"
-  integrity sha512-7yAJ/wmKWj3SgqjtkGqT/RCwI0HWAo5YnHMoF5nYXD8cdci+YSo23iPmgrZUNOpDxRWN91PqxUvMMr2lKpjr+w==
+delaunay-find@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/delaunay-find/-/delaunay-find-0.0.6.tgz#2ed017a79410013717fa7d9422e082c2502d4ae3"
+  integrity sha512-1+almjfrnR7ZamBk0q3Nhg6lqSe6Le4vL0WJDSMx4IDbQwTpUTXPjxC00lqLBT8MYsJpPCbI16sIkw9cPsbi7Q==
   dependencies:
     delaunator "^4.0.0"
 
@@ -10612,17 +10612,17 @@ victory-core@^35.6.2:
     prop-types "^15.5.8"
     react-fast-compare "^2.0.0"
 
-victory-create-container@^35.6.2:
-  version "35.6.2"
-  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-35.6.2.tgz#1d539d19db7ca1b069d3c27f645516280873def3"
-  integrity sha512-3fvj7LRy9FpHe+c6oe+XKFxo5AmQBXRAE3/s42RKGiPMEmf7qJQRB/OeG4S6UV2oVKxA1BN+WE1lmxD6ZfWV2Q==
+victory-create-container@^35.6.3:
+  version "35.6.3"
+  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-35.6.3.tgz#0b9e6f9764d84b6d0f8d94bdad0f5ffc0c5c0dd3"
+  integrity sha512-eXFXwSOklxMtKgmOORFt+QkBLTEnzhXBU1hJ40/NsQPh3ANyIPTBMKZhEB5+YuzVCJd1y0jKSj+DsUgGVMtfCA==
   dependencies:
     lodash "^4.17.19"
     victory-brush-container "^35.6.2"
     victory-core "^35.6.2"
     victory-cursor-container "^35.6.2"
     victory-selection-container "^35.6.2"
-    victory-voronoi-container "^35.6.2"
+    victory-voronoi-container "^35.6.3"
     victory-zoom-container "^35.6.2"
 
 victory-cursor-container@^35.6.2:
@@ -10754,12 +10754,12 @@ victory-tooltip@^35.6.2:
     prop-types "^15.5.8"
     victory-core "^35.6.2"
 
-victory-voronoi-container@^35.6.2:
-  version "35.6.2"
-  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-35.6.2.tgz#b16bc3795257594857f6f8cc90d6a83cdb928294"
-  integrity sha512-+h3g5Z7PLkqeiQiA5vAcUgwpO4xtzO+0zU4Oo+tDECAEuwQ0hFYe0GhqcQxsePltPC1LlXkj1G4BBulCrXJN+Q==
+victory-voronoi-container@^35.6.3:
+  version "35.6.3"
+  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-35.6.3.tgz#32b8f7eb6a42d0601adb37b21fb0991a20367623"
+  integrity sha512-3ZiAPFUhmTa50aUEqwzF5FvN7VLPCfacxLf0tCjxIQeSqVhna8TqtmLuypvJTJv7Ku7X8KCoLiTqGKCP7W7u8A==
   dependencies:
-    delaunay-find "0.0.5"
+    delaunay-find "0.0.6"
     lodash "^4.17.19"
     prop-types "^15.5.8"
     react-fast-compare "^2.0.0"
@@ -10785,10 +10785,10 @@ victory-zoom-container@^35.6.2:
     prop-types "^15.5.8"
     victory-core "^35.6.2"
 
-victory@^35.6.2:
-  version "35.6.2"
-  resolved "https://registry.yarnpkg.com/victory/-/victory-35.6.2.tgz#7931f709deb69b87262eaab1e6d19d4d81edec19"
-  integrity sha512-+T6KUTLcbUFgosrdm4W9ZWyqHrHsnAoX6zqPSempYErQ2D1Fd2TfsmDOgJR+4ZafrB2OWchmK1lbHCp8+g8W+g==
+victory@^35.6.3:
+  version "35.6.3"
+  resolved "https://registry.yarnpkg.com/victory/-/victory-35.6.3.tgz#7e2332945765d6a59418846c056e5944a0e8ac0f"
+  integrity sha512-gpdGy1UiwCJLSz0x1RQM4Y67kUqnQTSOa6UnswoDOsZMh33tH3fRGGf9kC7ArRa5U2tljD30YHUQUFGngxhVlg==
   dependencies:
     victory-area "^35.6.2"
     victory-axis "^35.6.2"
@@ -10799,7 +10799,7 @@ victory@^35.6.2:
     victory-candlestick "^35.6.2"
     victory-chart "^35.6.2"
     victory-core "^35.6.2"
-    victory-create-container "^35.6.2"
+    victory-create-container "^35.6.3"
     victory-cursor-container "^35.6.2"
     victory-errorbar "^35.6.2"
     victory-group "^35.6.2"
@@ -10814,7 +10814,7 @@ victory@^35.6.2:
     victory-stack "^35.6.2"
     victory-tooltip "^35.6.2"
     victory-voronoi "^35.6.2"
-    victory-voronoi-container "^35.6.2"
+    victory-voronoi-container "^35.6.3"
     victory-zoom-container "^35.6.2"
 
 vm-browserify@^1.0.1:
