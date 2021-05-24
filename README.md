@@ -8,7 +8,7 @@ Este projeto consiste em uma rede social inspirada no Instagram, feita especialm
 Veja abaixo uma foto do projeto.
 [![Image from Gyazo](https://i.gyazo.com/e98b3841d55508f4d966d3ed92ada3e9.png)](https://gyazo.com/e98b3841d55508f4d966d3ed92ada3e9)
 
-Você pode conferir o resultado final em: https://dogs-eta.vercel.app
+Você pode conferir o resultado final em: https://dogs.caioohtml.com
 
 
 ## 🎯 Objetivo do projeto
