@@ -25,7 +25,7 @@ Para que este rode em sua máquina, siga os passos abaixo:
 
 ```bash
 # Clone o repositório em alguma pasta em sua máquina
-$ git clone https://github.com/CaioAugustoo/dogs
+$ git clone https://github.com/CaioAugustoo/dogs.git
 
 # Entre no repositório
 $ cd dogs
