@@ -1,6 +1,19 @@
 export const API_URL = "https://dogsapi.origamid.dev/json";
 
-export const TOKEN_POST = body => {
+export type UserDataProps = {
+  email: string;
+  id: number;
+  nome: string;
+  username: string;
+}
+
+export type PhotosGetProps = {
+  page: number;
+  total: number;
+  user: UserDataProps;
+}
+
+export const TOKEN_POST = (body: object) => {
   return {
     url: API_URL + "/jwt-auth/v1/token",
     options: {
@@ -13,7 +26,7 @@ export const TOKEN_POST = body => {
   };
 };
 
-export const TOKEN_VALIDATE_POST = token => {
+export const TOKEN_VALIDATE_POST = (token: string) => {
   return {
     url: API_URL + "/jwt-auth/v1/token/validate",
     options: {
@@ -25,7 +38,7 @@ export const TOKEN_VALIDATE_POST = token => {
   };
 };
 
-export const USER_GET = token => {
+export const USER_GET = (token: string) => {
   return {
     url: API_URL + "/api/user",
     options: {
@@ -37,7 +50,7 @@ export const USER_GET = token => {
   };
 };
 
-export const USER_POST = body => {
+export const USER_POST = (body: object) => {
   return {
     url: API_URL + "/api/user",
     options: {
@@ -50,7 +63,7 @@ export const USER_POST = body => {
   };
 };
 
-export const PHOTO_POST = (formData, token) => {
+export const PHOTO_POST = (formData: object, token: string) => {
   return {
     url: API_URL + "/api/photo",
     options: {
@@ -63,7 +76,7 @@ export const PHOTO_POST = (formData, token) => {
   };
 };
 
-export const PHOTOS_GET = ({ page, total, user }) => {
+export const PHOTOS_GET = ({ page, total, user }: PhotosGetProps) => {
   return {
     url: `${API_URL}/api/photo/?_page=${page}&_total=${total}&_user=${user}`,
     options: {
@@ -73,7 +86,7 @@ export const PHOTOS_GET = ({ page, total, user }) => {
   };
 };
 
-export const PHOTO_GET = id => {
+export const PHOTO_GET = (id: number) => {
   return {
     url: `${API_URL}/api/photo/${id}`,
     options: {
@@ -83,7 +96,7 @@ export const PHOTO_GET = id => {
   };
 };
 
-export const COMMENT_POST = (id, body) => {
+export const COMMENT_POST = (id: number, body: object) => {
   return {
     url: `${API_URL}/api/comment/${id}`,
     options: {
@@ -98,7 +111,7 @@ export const COMMENT_POST = (id, body) => {
   };
 };
 
-export const PHOTO_DELETE = id => {
+export const PHOTO_DELETE = (id: number) => {
   return {
     url: `${API_URL}/api/photo/${id}`,
     options: {
@@ -111,7 +124,7 @@ export const PHOTO_DELETE = id => {
   };
 };
 
-export const PASSWORD_LOST = body => {
+export const PASSWORD_LOST = (body: object) => {
   return {
     url: API_URL + "/api/password/lost",
     options: {
@@ -124,7 +137,7 @@ export const PASSWORD_LOST = body => {
   };
 };
 
-export const PASSWORD_RESET = body => {
+export const PASSWORD_RESET = (body: object) => {
   return {
     url: API_URL + "/api/password/reset",
     options: {
