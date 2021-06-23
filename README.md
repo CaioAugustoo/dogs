@@ -30,7 +30,7 @@ $ git clone https://github.com/CaioAugustoo/dogs.git
 # Entre no repositório
 $ cd dogs
 
-Instale as dependencias digitando no termimal:
+Instale as dependências digitando no termimal:
 $ yarn install
 
 Rode a aplicação no modo de desenvolvimento.
