@@ -8,8 +8,7 @@ Este projeto consiste em uma rede social inspirada no Instagram, feita especialm
 Veja abaixo uma foto do projeto.
 [![Image from Gyazo](https://i.gyazo.com/e98b3841d55508f4d966d3ed92ada3e9.png)](https://gyazo.com/e98b3841d55508f4d966d3ed92ada3e9)
 
-Você pode conferir o resultado final em: https://dogs-eta.vercel.app/
-
+Você pode conferir o resultado final em: https://dogs.caioaugusto.dev/
 
 ## 🎯 Objetivo do projeto
 Este projeto foi desenvolvido durante o curso de React da Origamid. O Projeto no curso é desenvolvido com CSS modules. Eu me desafiei em desenvolver com styled components.
