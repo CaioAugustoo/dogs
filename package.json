@@ -12,7 +12,7 @@
     "react-router-dom": "^6.1.1",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.3",
-    "victory": "^36.0.1"
+    "victory": "^36.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
