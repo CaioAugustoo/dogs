@@ -10,6 +10,7 @@ import UserPhotoPost from "./UserPhotoPost";
 import UserStats from "./UserStats";
 import NotFound from "../NotFound";
 import Head from "../Helper/Head/Head";
+import ProtectedRoute from "../Helper/ProtectedRoute/ProtectedRoute";
 
 const User = () => {
   const { data } = useContext(UserContext);
@@ -19,10 +20,16 @@ const User = () => {
       <Head title="Minha Conta" />
       <UserHeader />
       <Routes>
-        <Route path="/" element={<Feed user={data?.id} />} />
-        <Route path="/postar" element={<UserPhotoPost />} />
-        <Route path="/estatisticas" element={<UserStats />} />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          element={
+            <ProtectedRoute>
+              <Route path="/" element={<Feed user={data?.id} />} />
+              <Route path="/postar" element={<UserPhotoPost />} />
+              <Route path="/estatisticas" element={<UserStats />} />
+              <Route path="*" element={<NotFound />} />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </S.Wrapper>
   );

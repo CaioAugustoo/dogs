@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
-import ProtectedRoute from "./Components/Helper/ProtectedRoute/ProtectedRoute";
 import Login from "./Components/Login/Login";
 import User from "./Components/User/User";
 import Header from "./Components/Header/Header";
@@ -27,8 +26,8 @@ const App = () => {
               <Route path="login/*" element={<Login />} />
               <Route path="foto/:id" element={<Photo />} />
               <Route path="perfil/:user" element={<UserProfile />} />
+              <Route path="conta/*" element={<User />} />
               <Route path="*" element={<NotFound />} />
-              <ProtectedRoute path="conta/*" element={<User />} />
             </Routes>
           </main>
           <Footer />
