@@ -10911,17 +10911,17 @@ victory-core@^36.3.0:
     prop-types "^15.5.8"
     react-fast-compare "^2.0.0"
 
-victory-create-container@^36.3.0:
-  version "36.3.0"
-  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-36.3.0.tgz#31095eed7e78bcf03bd58f0872bd6164c8ed55e2"
-  integrity sha512-9lx966S5tC4yhVUTD7hLG2Pa4RZnKa6D4EV88sNTC73C3JiDAFFPrLschMjIb5849nd30NPdfXa9zcLnkG3F3w==
+victory-create-container@^36.3.1:
+  version "36.3.1"
+  resolved "https://registry.yarnpkg.com/victory-create-container/-/victory-create-container-36.3.1.tgz#b1ef5d6f310ac3713ca06400ed3a7f2d6d336cbb"
+  integrity sha512-ved4WQH7UxhQZAHZsRK/B/bqIvQZi6EeHR7CkCgvanjYY3mkCM/avv9TNC5RzrNp/DeRC2xdFoBGVuUaLPLnTw==
   dependencies:
     lodash "^4.17.19"
     victory-brush-container "^36.3.0"
     victory-core "^36.3.0"
     victory-cursor-container "^36.3.0"
     victory-selection-container "^36.3.0"
-    victory-voronoi-container "^36.3.0"
+    victory-voronoi-container "^36.3.1"
     victory-zoom-container "^36.3.0"
 
 victory-cursor-container@^36.3.0:
@@ -11053,10 +11053,10 @@ victory-tooltip@^36.3.0:
     prop-types "^15.5.8"
     victory-core "^36.3.0"
 
-victory-voronoi-container@^36.3.0:
-  version "36.3.0"
-  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-36.3.0.tgz#4a937f6d6f6c681b92ea71e7c9ce460fabd297c9"
-  integrity sha512-J0RjsvmIAtWlLh5Ryzu/TDN1YwwI32be2axWsuSEo+x0sGHQblAETERpbjhwDtpsyz6xA/dC5h3kbSG8omcQQQ==
+victory-voronoi-container@^36.3.1:
+  version "36.3.1"
+  resolved "https://registry.yarnpkg.com/victory-voronoi-container/-/victory-voronoi-container-36.3.1.tgz#b842c966102bbcb2f39d6a72fb93bf23aef1cc0b"
+  integrity sha512-bFznyx0dLRb84nrGhOslN/e/3mfEGCmlPbvEFv8SGBVZxvAQv2go4byhZx4qvFbcKf2Wyx8svyxCsfS9g/OsEw==
   dependencies:
     delaunay-find "0.0.6"
     lodash "^4.17.19"
@@ -11084,10 +11084,10 @@ victory-zoom-container@^36.3.0:
     prop-types "^15.5.8"
     victory-core "^36.3.0"
 
-victory@^36.3.0:
-  version "36.3.0"
-  resolved "https://registry.yarnpkg.com/victory/-/victory-36.3.0.tgz#eae89f948b9bf3f118213a8b8fb0e571159b1067"
-  integrity sha512-aDaKN68miuCJAF41Y3bmIa/LUaRFOiQ+ubCGwPV+5IUj6QEuH2wK3x1c0yWtr2fsZgAQcAXBjpl7FN659Vrt0Q==
+victory@^36.3.1:
+  version "36.3.1"
+  resolved "https://registry.yarnpkg.com/victory/-/victory-36.3.1.tgz#3fef0db8f0e65291d48263db2bc2cec5d0a669f8"
+  integrity sha512-zqmld8hwkV9ysYRUIwfIR1/smjhLEr+m8XZ5xLPK7Io3BLUEcdeJd7bK/Edb4Scv91DodkF9d5DVmvyzEph89g==
   dependencies:
     victory-area "^36.3.0"
     victory-axis "^36.3.0"
@@ -11099,7 +11099,7 @@ victory@^36.3.0:
     victory-canvas "^36.3.0"
     victory-chart "^36.3.0"
     victory-core "^36.3.0"
-    victory-create-container "^36.3.0"
+    victory-create-container "^36.3.1"
     victory-cursor-container "^36.3.0"
     victory-errorbar "^36.3.0"
     victory-group "^36.3.0"
@@ -11114,7 +11114,7 @@ victory@^36.3.0:
     victory-stack "^36.3.0"
     victory-tooltip "^36.3.0"
     victory-voronoi "^36.3.0"
-    victory-voronoi-container "^36.3.0"
+    victory-voronoi-container "^36.3.1"
     victory-zoom-container "^36.3.0"
 
 vm-browserify@^1.0.1:
